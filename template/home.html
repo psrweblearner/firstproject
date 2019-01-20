@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Django Project</title>
+</head>
+<body>
+<h1>Weblearner Project</h1>
+<h4>Welcome to weblearner website </h4>
+<br>
+
+<form action="{% url 'count'%}">
+	<textarea cols="40" rows="10" name="fulltext"></textarea><br>
+	<button type="submit">count</button>
+</form>
+</body>
+</html>

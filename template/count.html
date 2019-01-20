@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>count page</title>
+</head>
+<body>
+	<a href="{% url 'home' %}">Back to home</a>
+<h1>Your Text </h1>
+{{fulltext}}
+<h1>word count</h1>
+{{length}}
+<h1>Repeat word in your text</h1>
+{%for word, value in worddictinory%}
+{{word}} = {{value}}<br>
+{%endfor%}
+</body>
+</html>
